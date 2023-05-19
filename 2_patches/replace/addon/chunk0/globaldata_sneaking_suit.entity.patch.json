@@ -1,1 +1,123 @@
-{"tempHash":"00097AA87B144150","tbluHash":"00E738E7CF7A35E1","patch":[{"AddEntity":["feede53c786921cc",{"parent":"ba8ea9278df2079","name":"CHAR_Global_Hero_Sneaking_Suit_M","factory":"[modules:/zglobaloutfitkit.class].pc_entitytype","blueprint":"[modules:/zglobaloutfitkit.class].pc_entityblueprint","properties":{"m_eActorType":{"type":"EActorType","value":"eAT_Hitman"},"m_eSoundFootwearType":{"type":"EHM5SoundFootwearType","value":"EFWT_RUBBER_BOOTS"},"m_aCharSets":{"type":"TArray<SEntityTemplateReference>","value":["feedb727c38fc4c7"]},"m_sId":{"type":"ZGuid","value":"5fe7d3ec-96be-4687-afcc-6906fc0a1096"},"m_bCanCallForHelp":{"type":"bool","value":true},"m_sCommonName":{"type":"ZString","value":"CHAR_Global_Hero_Sneaking_Suit_M"},"m_sTitle":{"type":"ZString","value":"Sneaking Suit"},"m_eOutfitAICategory":{"type":"EOutfitAICategory","value":"OAC_47NEWZEALAND"},"m_rNameTextResource":{"type":"ZRuntimeResourceID","value":{"resource":"004E05D66C0A3180","flag":"5F"}},"m_rDescriptionTextResource":{"type":"ZRuntimeResourceID","value":{"resource":"0015CE92DF204422","flag":"5F"}},"m_bHeroDisguiseAvailable":{"type":"bool","value":true},"m_bIsHitmanSuit":{"type":"bool","value":true}}}]},{"AddEntity":["feed8b968247e46c",{"parent":"feede53c786921cc","name":"Keyword_FOLEY_VR_OUTFIT_RUBBERGLOVES","factory":"[assembly:/_pro/design/gamecore/keywords/keywordsound.template?/keyword_foley_vr_outfit_rubbergloves.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/gamecore/keywords/keywordsound.template?/keyword_foley_vr_outfit_rubbergloves.entitytemplate].pc_entityblueprint","properties":{"m_rHolder":{"type":"SEntityTemplateReference","value":"feede53c786921cc","postInit":true}}}]},{"AddEntity":["feedb727c38fc4c7",{"parent":"feede53c786921cc","name":"CHARSET_Agent47_Sneaking_Suit","factory":"0036B83B6A7ED0C8","blueprint":"004DCE8BB44701CC"}]},{"AddEntity":["feed2a193516d88d",{"parent":"feede53c786921cc","name":"KeywordEntity_FOLEY_SUIT47","factory":"[assembly:/_pro/design/gamecore/keywords/keywordsound.template?/keywordentity_foley_outfit_suit47.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/gamecore/keywords/keywordsound.template?/keywordentity_foley_outfit_suit47.entitytemplate].pc_entityblueprint","properties":{"m_rHolder":{"type":"SEntityTemplateReference","value":"feede53c786921cc","postInit":true}}}]},{"AddEntity":["feedf79dcccce03a",{"parent":"feede53c786921cc","name":"Prof_Hero_SheepSuit","factory":"[assembly:/_pro/design/actor/profession.template?/prof_hero_sheepsuit.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/actor/profession.template?/prof_hero_sheepsuit.entitytemplate].pc_entityblueprint","properties":{"m_aHolders":{"type":"TArray<SEntityTemplateReference>","value":["feede53c786921cc"],"postInit":true}}}]},{"AddEntity":["feedede7997b4ef9",{"parent":"feede53c786921cc","name":"Keyword_Prof_Class_Default","factory":"007A51A2AFEC0D1A","blueprint":"00B0282A41C1CF2E","properties":{"m_aHolders":{"type":"TArray<SEntityTemplateReference>","value":["feede53c786921cc"]}}}]},{"AddEntity":["feed88eb2347c57d",{"parent":"feede53c786921cc","name":"Prof_Agent47","factory":"[assembly:/_pro/design/actor/profession.template?/prof_agent47.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/actor/profession.template?/prof_agent47.entitytemplate].pc_entityblueprint","properties":{"m_aHolders":{"type":"TArray<SEntityTemplateReference>","value":["feede53c786921cc"]}}}]}],"patchVersion":6}
+{
+	"tempHash": "00097AA87B144150",
+	"tbluHash": "00E738E7CF7A35E1",
+	"patch": [
+		{
+			"AddEntity": [
+				"feede53c786921cc",
+				{
+					"parent": "ba8ea9278df2079",
+					"name": "CHAR_Global_Hero_Sneaking_Suit_M",
+					"factory": "[modules:/zglobaloutfitkit.class].pc_entitytype",
+					"blueprint": "[modules:/zglobaloutfitkit.class].pc_entityblueprint",
+					"properties": {
+						"m_eActorType": { "type": "EActorType", "value": "eAT_Hitman" },
+						"m_eSoundFootwearType": { "type": "EHM5SoundFootwearType", "value": "EFWT_RUBBER_BOOTS" },
+						"m_aCharSets": { "type": "TArray<SEntityTemplateReference>", "value": ["feedb727c38fc4c7"] },
+						"m_sId": { "type": "ZGuid", "value": "5fe7d3ec-96be-4687-afcc-6906fc0a1096" },
+						"m_bCanCallForHelp": { "type": "bool", "value": true },
+						"m_sCommonName": { "type": "ZString", "value": "CHAR_Global_Hero_Sneaking_Suit_M" },
+						"m_sTitle": { "type": "ZString", "value": "Sneaking Suit" },
+						"m_eOutfitAICategory": { "type": "EOutfitAICategory", "value": "OAC_47NEWZEALAND" },
+						"m_rNameTextResource": {
+							"type": "ZRuntimeResourceID",
+							"value": { "resource": "004E05D66C0A3180", "flag": "5F" }
+						},
+						"m_rDescriptionTextResource": {
+							"type": "ZRuntimeResourceID",
+							"value": { "resource": "0015CE92DF204422", "flag": "5F" }
+						},
+						"m_bHeroDisguiseAvailable": { "type": "bool", "value": true },
+						"m_bIsHitmanSuit": { "type": "bool", "value": true }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"feed8b968247e46c",
+				{
+					"parent": "feede53c786921cc",
+					"name": "Keyword_FOLEY_VR_OUTFIT_RUBBERGLOVES",
+					"factory": "[assembly:/_pro/design/gamecore/keywords/keywordsound.template?/keyword_foley_vr_outfit_rubbergloves.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordsound.template?/keyword_foley_vr_outfit_rubbergloves.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rHolder": { "type": "SEntityTemplateReference", "value": "feede53c786921cc", "postInit": true }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"feedb727c38fc4c7",
+				{
+					"parent": "feede53c786921cc",
+					"name": "CHARSET_Agent47_Sneaking_Suit",
+					"factory": "0036B83B6A7ED0C8",
+					"blueprint": "004DCE8BB44701CC"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"feed2a193516d88d",
+				{
+					"parent": "feede53c786921cc",
+					"name": "KeywordEntity_FOLEY_SUIT47",
+					"factory": "[assembly:/_pro/design/gamecore/keywords/keywordsound.template?/keywordentity_foley_outfit_suit47.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordsound.template?/keywordentity_foley_outfit_suit47.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rHolder": { "type": "SEntityTemplateReference", "value": "feede53c786921cc", "postInit": true }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"feedf79dcccce03a",
+				{
+					"parent": "feede53c786921cc",
+					"name": "Prof_Hero_SheepSuit",
+					"factory": "[assembly:/_pro/design/actor/profession.template?/prof_hero_sheepsuit.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/actor/profession.template?/prof_hero_sheepsuit.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_aHolders": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": ["feede53c786921cc"],
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"feedede7997b4ef9",
+				{
+					"parent": "feede53c786921cc",
+					"name": "Keyword_Prof_Class_Default",
+					"factory": "007A51A2AFEC0D1A",
+					"blueprint": "00B0282A41C1CF2E",
+					"properties": {
+						"m_aHolders": { "type": "TArray<SEntityTemplateReference>", "value": ["feede53c786921cc"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"feed88eb2347c57d",
+				{
+					"parent": "feede53c786921cc",
+					"name": "Prof_Agent47",
+					"factory": "[assembly:/_pro/design/actor/profession.template?/prof_agent47.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/actor/profession.template?/prof_agent47.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_aHolders": { "type": "TArray<SEntityTemplateReference>", "value": ["feede53c786921cc"] }
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}
