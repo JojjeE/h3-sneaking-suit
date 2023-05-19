@@ -1,0 +1,25 @@
+{
+	"TOKEN_OUTFIT_HERO_SNEAKING_SUIT": {
+		"Id": "TOKEN_OUTFIT_HERO_SNEAKING_SUIT",
+		"Guid": "40a63a8b-e5b7-4bb9-a3b0-a7eec80fce51",
+		"Type": "disguise",
+		"Subtype": "tactical",
+		"ImageId": "",
+		"RMTPrice": -1,
+		"GamePrice": -1,
+		"IsPurchasable": false,
+		"IsPublished": true,
+		"IsDroppable": false,
+		"Capabilities": [],
+		"Qualities": {},
+		"Properties": {
+			"Quality": 2,
+			"Rarity": "common",
+			"LoadoutSlot": "disguise",
+			"IsConsumable": false,
+			"RepositoryId": "5fe7d3ec-96be-4687-afcc-6906fc0a1096",
+			"OrderIndex": 21
+		},
+		"Rarity": "common"
+	}
+}

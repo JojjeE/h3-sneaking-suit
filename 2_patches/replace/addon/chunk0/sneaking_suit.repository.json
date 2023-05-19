@@ -1,0 +1,14 @@
+{
+	"5fe7d3ec-96be-4687-afcc-6906fc0a1096": {
+		"ID_": "5fe7d3ec-96be-4687-afcc-6906fc0a1096",
+		"CommonName": "CHAR_Global_Hero_Sneaking_Suit_M",
+		"Description": "UI_TOKEN_OUTFIT_HERO_SNEAKING_SUIT_DESC",
+		"HeroDisguiseAvailable": true,
+		"Image": "images/unlockables_override/47_Outfits_sneaking_suit.jpg",
+		"IsHitmanSuit": true,
+		"Name": "UI_TOKEN_OUTFIT_HERO_SNEAKING_SUIT_NAME",
+		"Category": "",
+		"ImageTransparent": "",
+		"TokenID": "TOKEN_OUTFIT_HERO_SNEAKING_SUIT"
+	}
+}

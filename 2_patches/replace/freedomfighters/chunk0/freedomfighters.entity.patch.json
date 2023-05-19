@@ -1,0 +1,21 @@
+{
+	"tempHash": "00097AA87B144150",
+	"tbluHash": "00E738E7CF7A35E1",
+	"patch": [
+		{ "SubEntityOperation": ["471db93f370bbf5b", { "SetFactory": "0036B83B6A7ED0C8" }] },
+		{ "SubEntityOperation": ["471db93f370bbf5b", { "SetBlueprint": "004DCE8BB44701CC" }] },
+		{
+			"SubEntityOperation": [
+				"9e4c419f6c35f811",
+				{ "SetPropertyValue": { "property_name": "m_eSoundFootwearType", "value": "EFWT_RUBBER_BOOTS" } }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"9e4c419f6c35f811",
+				{ "SetPropertyValue": { "property_name": "m_eOutfitAICategory", "value": "OAC_47NEWZEALAND" } }
+			]
+		}
+	],
+	"patchVersion": 6
+}
