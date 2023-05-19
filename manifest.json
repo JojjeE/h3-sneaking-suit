@@ -1,9 +1,10 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"id": "Jojje.ICASneakingSuit",
 	"name": "ICA Sneaking Suit",
 	"description": "To show them age hasn't slowed you down one bit, use this cutting-edge stealth suit. Install it for Peacock or replace a tactical suit of your choice.",
 	"authors": ["Jojje"],
-	"frameworkVersion": "2.26.1"
+	"frameworkVersion": "2.26.1",
+	"updateCheck": "https://github.com/JojjeE/h3-sneaking-suit/releases/latest/download/updates.json"
 }
