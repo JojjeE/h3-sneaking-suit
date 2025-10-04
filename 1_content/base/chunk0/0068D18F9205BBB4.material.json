@@ -65,12 +65,12 @@
 							{
 								"Name": "ConstantVector1D_04_Value",
 								"Enabled": 1,
-								"Value": 0.200000023841858
+								"Value": 0.0
 							},
 							{
 								"Name": "ConstantVector1D_06_Value",
 								"Enabled": 1,
-								"Value": 1.100000023841858
+								"Value": 1.0
 							},
 							{
 								"Name": "gm_mTransform2D_01",
@@ -141,8 +141,8 @@
 			"Texture2D_03": "00B8FF2C4E65CD57",
 			"Texture2D_01": "004FC98423737A69"
 		},
-		"ConstantVector1D_04_Value": 0.200000023841858,
-		"ConstantVector1D_06_Value": 1.100000023841858,
+		"ConstantVector1D_04_Value": 0.0,
+		"ConstantVector1D_06_Value": 1.0,
 		"ConstantVector1D_14_Value": 0.0,
 		"ConstantVector1D_15_Value": 1.0,
 		"ConstantVector1D_01_Value": 0.5,
