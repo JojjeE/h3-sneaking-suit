@@ -1,0 +1,31 @@
+{
+	"factory": "[unknown:/*/sneaking_suit_sub.mi].pc_entitytype",
+	"blueprint": "[unknown:/*/sneaking_suit_sub.mi].pc_entityblueprint",
+	"material": "[unknown:/*/sneaking_suit_sub.mi].pc_mi",
+	"overrides": {
+		"Texture2DNormal_01": {
+			"type": "texture",
+			"value": "[assembly:/_pro/characters/assets/hero/agent47/textures/agent47_sneaking_suit_sub.texture?/normal_a.tex](asnormalmap).pc_tex"
+		},
+		"Texture2D_03": {
+			"type": "texture",
+			"value": "[assembly:/_pro/characters/assets/hero/agent47/textures/agent47_sneaking_suit_sub.texture?/specular_a.tex](ascolormap).pc_tex"
+		},
+		"Texture2D_01": {
+			"type": "texture",
+			"value": "[assembly:/_pro/characters/assets/hero/agent47/textures/agent47_sneaking_suit_sub.texture?/diffuse_a.tex](ascolormap).pc_tex"
+		},
+		"Diffuse_Color_01_Value": { "type": "color", "value": "ffffff" },
+		"ConstantVector1D_04_Value": { "type": "float", "value": 0.0 },
+		"ConstantVector1D_06_Value": { "type": "float", "value": 1.0 },
+		"ConstantVector1D_14_Value": { "type": "float", "value": 0.0 },
+		"ConstantVector1D_15_Value": { "type": "float", "value": 1.0 },
+		"ConstantVector1D_01_Value": { "type": "float", "value": 0.5 },
+		"Diffuse_Saturation_01_Value": { "type": "float", "value": 1.0 },
+		"Diffuse_Hue_Shift_01_Value": { "type": "float", "value": 0.0 },
+		"ConstantVector1D_03_Value": { "type": "float", "value": 1.0 },
+		"ConstantVector1D_13_Value": { "type": "float", "value": 0.1 },
+		"ConstantVector1D_05_Value": { "type": "float", "value": 0.0 },
+		"ConstantVector1D_16_Value": { "type": "float", "value": 1.0 }
+	}
+}

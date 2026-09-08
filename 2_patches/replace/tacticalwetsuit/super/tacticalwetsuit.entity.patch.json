@@ -1,0 +1,35 @@
+{
+	"factory": "[assembly:/_pro/scenes/bricks/globaldata.brick].pc_entitytype",
+	"blueprint": "[assembly:/_pro/scenes/bricks/globaldata.brick].pc_entityblueprint",
+	"patch": [
+		{
+			"PatchEntity": [
+				"00f39c7958f2884f",
+				{
+					"SetFactory": "[assembly:/_pro/characters/templates/hero/agent47/agent47_outfits.template?/charset_agent47_sneaking_suit.entitytemplate].pc_entitytype"
+				}
+			]
+		},
+		{
+			"PatchEntity": [
+				"00f39c7958f2884f",
+				{
+					"SetBlueprint": "[assembly:/_pro/characters/templates/hero/agent47/agent47_outfits.template?/charset_agent47_sneaking_suit.entitytemplate].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"PatchEntity": [
+				"9f5cf105e683012a",
+				{
+					"PatchPropertyValue": [
+						"m_eSoundFootwearType",
+						{ "Set": { "type": "EHM5SoundFootwearType", "value": "EFWT_RUBBER_BOOTS" } },
+						false
+					]
+				}
+			]
+		}
+	],
+	"patchVersion": 7
+}

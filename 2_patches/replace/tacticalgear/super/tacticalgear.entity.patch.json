@@ -1,0 +1,47 @@
+{
+	"factory": "[assembly:/_pro/scenes/bricks/globaldata.brick].pc_entitytype",
+	"blueprint": "[assembly:/_pro/scenes/bricks/globaldata.brick].pc_entityblueprint",
+	"patch": [
+		{
+			"PatchEntity": [
+				"8dd63434b2af4cff",
+				{
+					"PatchPropertyValue": [
+						"m_eSoundFootwearType",
+						{ "Set": { "type": "EHM5SoundFootwearType", "value": "EFWT_RUBBER_BOOTS" } },
+						false
+					]
+				}
+			]
+		},
+		{
+			"PatchEntity": [
+				"8dd63434b2af4cff",
+				{
+					"PatchPropertyValue": [
+						"m_eOutfitAICategory",
+						{ "Set": { "type": "EOutfitAICategory", "value": "OAC_47NEWZEALAND" } },
+						false
+					]
+				}
+			]
+		},
+		{
+			"PatchEntity": [
+				"b1afbbe7432843a1",
+				{
+					"SetFactory": "[assembly:/_pro/characters/templates/hero/agent47/agent47_outfits.template?/charset_agent47_sneaking_suit.entitytemplate].pc_entitytype"
+				}
+			]
+		},
+		{
+			"PatchEntity": [
+				"b1afbbe7432843a1",
+				{
+					"SetBlueprint": "[assembly:/_pro/characters/templates/hero/agent47/agent47_outfits.template?/charset_agent47_sneaking_suit.entitytemplate].pc_entityblueprint"
+				}
+			]
+		}
+	],
+	"patchVersion": 7
+}

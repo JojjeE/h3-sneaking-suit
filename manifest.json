@@ -1,279 +1,122 @@
 {
-	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
 	"id": "Jojje.ICASneakingSuit",
 	"name": "ICA Sneaking Suit",
 	"description": "To show them age hasn't slowed you down one bit, use this cutting-edge stealth suit. Install it for Peacock or replace a tactical suit of your choice.",
 	"authors": ["Jojje"],
-	"frameworkVersion": "2.33.31",
 	"version": "1.1.0",
-	"updateCheck": "https://github.com/JojjeE/h3-sneaking-suit/releases/latest/download/updates.json",
-	"contentFolders": ["1_content/base"],
+	"frameworkVersion": "3.0.0",
+	"url": "https://github.com/JojjeE/h3-sneaking-suit",
+	"conditions": { "supportedGames": ["h3"] },
+	"data": { "contentFolders": ["1_content/base"] },
 	"options": [
 		{
-			"group": "Variant",
-			"name": "ICA Black (default)",
-			"type": "select",
-			"tooltip": "Custom ICA black.",
-			"image": "icablack.jpg",
-			"contentFolders": ["2_patches/variant/ica"],
-			"enabledByDefault": true
-		},
-		{
-			"group": "Variant",
-			"name": "Ground Zeroes Blue",
-			"type": "select",
-			"tooltip": "Ground Zeroes-style blue with black features, green straps and yellow highlights.",
-			"image": "groundzeroesblue.jpg",
-			"contentFolders": ["2_patches/variant/gz"]
-		},
-		{
-			"group": "Replace",
-			"name": "Peacock Addon",
-			"type": "select",
-			"tooltip": "Install the suit to your game as an addon without replacing existing suits. This will only work if you're playing with Peacock.",
-			"enabledByDefault": true,
-			"contentFolders": ["2_patches/replace/addon"],
-			"blobsFolders": ["blobs/addon"],
-			"localisedLines": {
-				"0015CE92DF204422": "UI_TOKEN_OUTFIT_HERO_SNEAKING_SUIT_DESC",
-				"004E05D66C0A3180": "UI_TOKEN_OUTFIT_HERO_SNEAKING_SUIT_NAME"
-			},
-			"localisation": {
-				"english": {
-					"UI_TOKEN_OUTFIT_HERO_SNEAKING_SUIT_DESC": "With para-aramid Kevlar inlays, rubberized materials and specialized cutting-edge technology, this ICA high-grade stealth suit will keep you dry, quiet and on target.",
-					"UI_TOKEN_OUTFIT_HERO_SNEAKING_SUIT_NAME": "ICA Sneaking Suit"
+			"id": "variant-color",
+			"type": "selection",
+			"name": "Variant",
+			"defaultValue": "variant-color-ica-black",
+			"options": [
+				{
+					"id": "variant-color-ica-black",
+					"name": "ICA Black",
+					"description": "Custom ICA black.",
+					"image": "icablack.jpg",
+					"data": { "contentFolders": ["2_patches/variant/ica"] }
 				},
-				"french": {
-					"UI_TOKEN_OUTFIT_HERO_SNEAKING_SUIT_DESC": "Avec des incrustations de Kevlar para-aramide, des matériaux caoutchoutés et une technologie de pointe spécialisée, cette combinaison furtive ICA de haute qualité vous gardera au sec, silencieux et sur la cible.",
-					"UI_TOKEN_OUTFIT_HERO_SNEAKING_SUIT_NAME": "Combinaison furtive ICA"
+				{
+					"id": "variant-color-gz-blue",
+					"name": "Ground Zeroes Blue",
+					"description": "Ground Zeroes-style blue with black features, green straps and yellow highlights.",
+					"image": "groundzeroesblue.jpg",
+					"data": { "contentFolders": ["2_patches/variant/gz"] }
+				}
+			]
+		},
+		{
+			"id": "install",
+			"type": "selection",
+			"name": "Replace",
+			"defaultValue": "install-peacock",
+			"options": [
+				{
+					"id": "install-peacock",
+					"name": "Peacock Addon",
+					"description": "Install the suit to your game as an addon without replacing existing suits. This will only work if you're playing with Peacock.",
+					"data": {
+						"contentFolders": ["2_patches/replace/addon"],
+						"blobFolders": ["blobs/addon"],
+						"localisation": {
+							"UI_TOKEN_OUTFIT_HERO_SNEAKING_SUIT_DESC": {
+								"english": "With para-aramid Kevlar inlays, rubberized materials and specialized cutting-edge technology, this ICA high-grade stealth suit will keep you dry, quiet and on target.",
+								"french": "Avec des incrustations de Kevlar para-aramide, des matériaux caoutchoutés et une technologie de pointe spécialisée, cette combinaison furtive ICA de haute qualité vous gardera au sec, silencieux et sur la cible.",
+								"italian": "Con inserti in Kevlar para-aramidico, materiali gommati e tecnologia specializzata all'avanguardia, questa tuta stealth di alta qualità ICA vi manterrà asciutti, silenziosi e sul bersaglio.",
+								"german": "Mit Einlagen aus Para-Aramid-Kevlar, gummierten Materialien und spezieller Spitzentechnologie sorgt dieser hochwertige ICA-Tarnanzug dafür, dass Sie trocken und leise bleiben und Ihr Ziel nicht verfehlen.",
+								"spanish": "Con incrustaciones de Kevlar para-aramida, materiales engomados y tecnología de vanguardia especializada, este traje sigiloso ICA de alta calidad le mantendrá seco, silencioso y en el blanco.",
+								"russian": "Благодаря вставкам из пара-арамидного кевлара, прорезиненным материалам и специализированным передовым технологиям, этот высококлассный стелс-костюм ICA позволит вам оставаться сухим, тихим и нацеленным на цель."
+							},
+							"UI_TOKEN_OUTFIT_HERO_SNEAKING_SUIT_NAME": {
+								"english": "ICA Sneaking Suit",
+								"french": "Combinaison furtive ICA",
+								"italian": "Tuta stealth di ICA",
+								"german": "ICA-Schleichanzug",
+								"spanish": "Traje sigiloso ICA",
+								"russian": "Стелс-костюм ICA"
+							}
+						},
+						"localisedLines": {
+							"[assembly:/localization/hitman6/conversations/ui/pro/online/repository/outfits_hero.sweetmenutext?/5fe7d3ec-96be-4687-afcc-6906fc0a1096_hitman6_hero_sneaking_suit_m_description_.sweetline].pc_sweetline": "UI_TOKEN_OUTFIT_HERO_SNEAKING_SUIT_DESC",
+							"[assembly:/localization/hitman6/conversations/ui/pro/online/repository/outfits_hero.sweetmenutext?/5fe7d3ec-96be-4687-afcc-6906fc0a1096_hitman6_hero_sneaking_suit_m_name_.sweetline].pc_sweetline": "UI_TOKEN_OUTFIT_HERO_SNEAKING_SUIT_NAME"
+						}
+					}
 				},
-				"italian": {
-					"UI_TOKEN_OUTFIT_HERO_SNEAKING_SUIT_DESC": "Con inserti in Kevlar para-aramidico, materiali gommati e tecnologia specializzata all'avanguardia, questa tuta stealth di alta qualità ICA vi manterrà asciutti, silenziosi e sul bersaglio.",
-					"UI_TOKEN_OUTFIT_HERO_SNEAKING_SUIT_NAME": "Tuta stealth di ICA"
+				{
+					"id": "install-phantom",
+					"name": "Freedom Phantom Suit",
+					"data": {
+						"contentFolders": ["2_patches/replace/freedomfighters"],
+						"blobFolders": ["blobs/freedomfighters"]
+					}
 				},
-				"german": {
-					"UI_TOKEN_OUTFIT_HERO_SNEAKING_SUIT_DESC": "Mit Einlagen aus Para-Aramid-Kevlar, gummierten Materialien und spezieller Spitzentechnologie sorgt dieser hochwertige ICA-Tarnanzug dafür, dass Sie trocken und leise bleiben und Ihr Ziel nicht verfehlen.",
-					"UI_TOKEN_OUTFIT_HERO_SNEAKING_SUIT_NAME": "ICA-Schleichanzug"
+				{
+					"id": "install-guerrilla",
+					"name": "Guerrilla Wetsuit",
+					"data": {
+						"contentFolders": ["2_patches/replace/guerrillawetsuit"],
+						"blobFolders": ["blobs/guerrillawetsuit"]
+					}
 				},
-				"spanish": {
-					"UI_TOKEN_OUTFIT_HERO_SNEAKING_SUIT_DESC": "Con incrustaciones de Kevlar para-aramida, materiales engomados y tecnología de vanguardia especializada, este traje sigiloso ICA de alta calidad le mantendrá seco, silencioso y en el blanco.",
-					"UI_TOKEN_OUTFIT_HERO_SNEAKING_SUIT_NAME": "Traje sigiloso ICA"
+				{
+					"id": "install-raven",
+					"name": "Raven Suit",
+					"data": {
+						"contentFolders": ["2_patches/replace/ravensuit"],
+						"blobFolders": ["blobs/ravensuit"]
+					}
 				},
-				"russian": {
-					"UI_TOKEN_OUTFIT_HERO_SNEAKING_SUIT_DESC": "Благодаря вставкам из пара-арамидного кевлара, прорезиненным материалам и специализированным передовым технологиям, этот высококлассный стелс-костюм ICA позволит вам оставаться сухим, тихим и нацеленным на цель.",
-					"UI_TOKEN_OUTFIT_HERO_SNEAKING_SUIT_NAME": "Стелс-костюм ICA"
-				}
-			}
-		},
-		{
-			"group": "Replace",
-			"name": "Freedom Phantom Suit",
-			"type": "select",
-			"contentFolders": ["2_patches/replace/freedomfighters"],
-			"blobsFolders": ["blobs/freedomfighters"],
-			"localisationOverrides": {
-				"00985A1100E5EDDC": {
-					"english": {
-						"942690429": "With para-aramid Kevlar inlays, rubberized materials and specialized cutting-edge technology, this ICA high-grade stealth suit will keep you dry, quiet and on target.",
-						"1898673007": "ICA Sneaking Suit"
-					},
-					"french": {
-						"942690429": "Avec des incrustations de Kevlar para-aramide, des matériaux caoutchoutés et une technologie de pointe spécialisée, cette combinaison furtive ICA de haute qualité vous gardera au sec, silencieux et sur la cible.",
-						"1898673007": "Combinaison furtive ICA"
-					},
-					"italian": {
-						"942690429": "Con inserti in Kevlar para-aramidico, materiali gommati e tecnologia specializzata all'avanguardia, questa tuta stealth di alta qualità ICA vi manterrà asciutti, silenziosi e sul bersaglio.",
-						"1898673007": "Tuta stealth di ICA"
-					},
-					"german": {
-						"942690429": "Mit Einlagen aus Para-Aramid-Kevlar, gummierten Materialien und spezieller Spitzentechnologie sorgt dieser hochwertige ICA-Tarnanzug dafür, dass Sie trocken und leise bleiben und Ihr Ziel nicht verfehlen.",
-						"1898673007": "ICA-Schleichanzug"
-					},
-					"spanish": {
-						"942690429": "Con incrustaciones de Kevlar para-aramida, materiales engomados y tecnología de vanguardia especializada, este traje sigiloso ICA de alta calidad le mantendrá seco, silencioso y en el blanco.",
-						"1898673007": "Traje sigiloso ICA"
-					},
-					"russian": {
-						"942690429": "Благодаря вставкам из пара-арамидного кевлара, прорезиненным материалам и специализированным передовым технологиям, этот высококлассный стелс-костюм ICA позволит вам оставаться сухим, тихим и нацеленным на цель.",
-						"1898673007": "Стелс-костюм ICA"
+				{
+					"id": "install-tacgear",
+					"name": "Tactical Gear with Hunter's Hat",
+					"data": {
+						"contentFolders": ["2_patches/replace/tacticalgear"],
+						"blobFolders": ["blobs/tacticalgear"]
+					}
+				},
+				{
+					"id": "install-turtleneck",
+					"name": "Tactical Turtleneck",
+					"data": {
+						"contentFolders": ["2_patches/replace/tacticalturtleneck"],
+						"blobFolders": ["blobs/tacticalturtleneck"]
+					}
+				},
+				{
+					"id": "install-wetsuit",
+					"name": "Tactical Wetsuit",
+					"data": {
+						"contentFolders": ["2_patches/replace/tacticalwetsuit"],
+						"blobFolders": ["blobs/tacticalwetsuit"]
 					}
 				}
-			}
-		},
-		{
-			"group": "Replace",
-			"name": "Guerrilla Wetsuit",
-			"type": "select",
-			"contentFolders": ["2_patches/replace/guerrillawetsuit"],
-			"blobsFolders": ["blobs/guerrillawetsuit"],
-			"localisationOverrides": {
-				"004B8C5124A49543": {
-					"english": {
-						"1501384937": "ICA Sneaking Suit",
-						"1646292957": "With para-aramid Kevlar inlays, rubberized materials and specialized cutting-edge technology, this ICA high-grade stealth suit will keep you dry, quiet and on target."
-					},
-					"french": {
-						"1501384937": "Combinaison furtive ICA",
-						"1646292957": "Avec des incrustations de Kevlar para-aramide, des matériaux caoutchoutés et une technologie de pointe spécialisée, cette combinaison furtive ICA de haute qualité vous gardera au sec, silencieux et sur la cible."
-					},
-					"italian": {
-						"1501384937": "Tuta stealth di ICA",
-						"1646292957": "Con inserti in Kevlar para-aramidico, materiali gommati e tecnologia specializzata all'avanguardia, questa tuta stealth di alta qualità ICA vi manterrà asciutti, silenziosi e sul bersaglio."
-					},
-					"german": {
-						"1501384937": "ICA-Schleichanzug",
-						"1646292957": "Mit Einlagen aus Para-Aramid-Kevlar, gummierten Materialien und spezieller Spitzentechnologie sorgt dieser hochwertige ICA-Tarnanzug dafür, dass Sie trocken und leise bleiben und Ihr Ziel nicht verfehlen."
-					},
-					"spanish": {
-						"1501384937": "Traje sigiloso ICA",
-						"1646292957": "Con incrustaciones de Kevlar para-aramida, materiales engomados y tecnología de vanguardia especializada, este traje sigiloso ICA de alta calidad le mantendrá seco, silencioso y en el blanco."
-					},
-					"russian": {
-						"1501384937": "Стелс-костюм ICA",
-						"1646292957": "Благодаря вставкам из пара-арамидного кевлара, прорезиненным материалам и специализированным передовым технологиям, этот высококлассный стелс-костюм ICA позволит вам оставаться сухим, тихим и нацеленным на цель."
-					}
-				}
-			}
-		},
-		{
-			"group": "Replace",
-			"name": "Raven Suit",
-			"type": "select",
-			"contentFolders": ["2_patches/replace/ravensuit"],
-			"blobsFolders": ["blobs/ravensuit"],
-			"localisationOverrides": {
-				"00985A1100E5EDDC": {
-					"english": {
-						"362281408": "ICA Sneaking Suit",
-						"4108431512": "With para-aramid Kevlar inlays, rubberized materials and specialized cutting-edge technology, this ICA high-grade stealth suit will keep you dry, quiet and on target."
-					},
-					"french": {
-						"362281408": "Combinaison furtive ICA",
-						"4108431512": "Avec des incrustations de Kevlar para-aramide, des matériaux caoutchoutés et une technologie de pointe spécialisée, cette combinaison furtive ICA de haute qualité vous gardera au sec, silencieux et sur la cible."
-					},
-					"italian": {
-						"362281408": "Tuta stealth di ICA",
-						"4108431512": "Con inserti in Kevlar para-aramidico, materiali gommati e tecnologia specializzata all'avanguardia, questa tuta stealth di alta qualità ICA vi manterrà asciutti, silenziosi e sul bersaglio."
-					},
-					"german": {
-						"362281408": "ICA-Schleichanzug",
-						"4108431512": "Mit Einlagen aus Para-Aramid-Kevlar, gummierten Materialien und spezieller Spitzentechnologie sorgt dieser hochwertige ICA-Tarnanzug dafür, dass Sie trocken und leise bleiben und Ihr Ziel nicht verfehlen."
-					},
-					"spanish": {
-						"362281408": "Traje sigiloso ICA",
-						"4108431512": "Con incrustaciones de Kevlar para-aramida, materiales engomados y tecnología de vanguardia especializada, este traje sigiloso ICA de alta calidad le mantendrá seco, silencioso y en el blanco."
-					},
-					"russian": {
-						"362281408": "Стелс-костюм ICA",
-						"4108431512": "Благодаря вставкам из пара-арамидного кевлара, прорезиненным материалам и специализированным передовым технологиям, этот высококлассный стелс-костюм ICA позволит вам оставаться сухим, тихим и нацеленным на цель."
-					}
-				}
-			}
-		},
-		{
-			"group": "Replace",
-			"name": "Tactical Gear with Hunter's Hat",
-			"type": "select",
-			"contentFolders": ["2_patches/replace/tacticalgear"],
-			"blobsFolders": ["blobs/tacticalgear"],
-			"localisationOverrides": {
-				"00985A1100E5EDDC": {
-					"english": {
-						"1007664652": "ICA Sneaking Suit",
-						"3511546838": "With para-aramid Kevlar inlays, rubberized materials and specialized cutting-edge technology, this ICA high-grade stealth suit will keep you dry, quiet and on target."
-					},
-					"french": {
-						"1007664652": "Combinaison furtive ICA",
-						"3511546838": "Avec des incrustations de Kevlar para-aramide, des matériaux caoutchoutés et une technologie de pointe spécialisée, cette combinaison furtive ICA de haute qualité vous gardera au sec, silencieux et sur la cible."
-					},
-					"italian": {
-						"1007664652": "Tuta stealth di ICA",
-						"3511546838": "Con inserti in Kevlar para-aramidico, materiali gommati e tecnologia specializzata all'avanguardia, questa tuta stealth di alta qualità ICA vi manterrà asciutti, silenziosi e sul bersaglio."
-					},
-					"german": {
-						"1007664652": "ICA-Schleichanzug",
-						"3511546838": "Mit Einlagen aus Para-Aramid-Kevlar, gummierten Materialien und spezieller Spitzentechnologie sorgt dieser hochwertige ICA-Tarnanzug dafür, dass Sie trocken und leise bleiben und Ihr Ziel nicht verfehlen."
-					},
-					"spanish": {
-						"1007664652": "Traje sigiloso ICA",
-						"3511546838": "Con incrustaciones de Kevlar para-aramida, materiales engomados y tecnología de vanguardia especializada, este traje sigiloso ICA de alta calidad le mantendrá seco, silencioso y en el blanco."
-					},
-					"russian": {
-						"1007664652": "Стелс-костюм ICA",
-						"3511546838": "Благодаря вставкам из пара-арамидного кевлара, прорезиненным материалам и специализированным передовым технологиям, этот высококлассный стелс-костюм ICA позволит вам оставаться сухим, тихим и нацеленным на цель."
-					}
-				}
-			}
-		},
-		{
-			"group": "Replace",
-			"name": "Tactical Turtleneck",
-			"type": "select",
-			"contentFolders": ["2_patches/replace/tacticalturtleneck"],
-			"blobsFolders": ["blobs/tacticalturtleneck"],
-			"localisationOverrides": {
-				"00985A1100E5EDDC": {
-					"english": {
-						"299590052": "With para-aramid Kevlar inlays, rubberized materials and specialized cutting-edge technology, this ICA high-grade stealth suit will keep you dry, quiet and on target.",
-						"2797762095": "ICA Sneaking Suit"
-					},
-					"french": {
-						"299590052": "Avec des incrustations de Kevlar para-aramide, des matériaux caoutchoutés et une technologie de pointe spécialisée, cette combinaison furtive ICA de haute qualité vous gardera au sec, silencieux et sur la cible.",
-						"2797762095": "Combinaison furtive ICA"
-					},
-					"italian": {
-						"299590052": "Con inserti in Kevlar para-aramidico, materiali gommati e tecnologia specializzata all'avanguardia, questa tuta stealth di alta qualità ICA vi manterrà asciutti, silenziosi e sul bersaglio.",
-						"2797762095": "Tuta stealth di ICA"
-					},
-					"german": {
-						"299590052": "Mit Einlagen aus Para-Aramid-Kevlar, gummierten Materialien und spezieller Spitzentechnologie sorgt dieser hochwertige ICA-Tarnanzug dafür, dass Sie trocken und leise bleiben und Ihr Ziel nicht verfehlen.",
-						"2797762095": "ICA-Schleichanzug"
-					},
-					"spanish": {
-						"299590052": "Con incrustaciones de Kevlar para-aramida, materiales engomados y tecnología de vanguardia especializada, este traje sigiloso ICA de alta calidad le mantendrá seco, silencioso y en el blanco.",
-						"2797762095": "Traje sigiloso ICA"
-					},
-					"russian": {
-						"299590052": "Благодаря вставкам из пара-арамидного кевлара, прорезиненным материалам и специализированным передовым технологиям, этот высококлассный стелс-костюм ICA позволит вам оставаться сухим, тихим и нацеленным на цель.",
-						"2797762095": "Стелс-костюм ICA"
-					}
-				}
-			}
-		},
-		{
-			"group": "Replace",
-			"name": "Tactical Wetsuit",
-			"type": "select",
-			"contentFolders": ["2_patches/replace/tacticalwetsuit"],
-			"blobsFolders": ["blobs/tacticalwetsuit"],
-			"localisationOverrides": {
-				"009F430D046716BE": {
-					"english": {
-						"562128030": "With para-aramid Kevlar inlays, rubberized materials and specialized cutting-edge technology, this ICA high-grade stealth suit will keep you dry, quiet and on target.",
-						"3166204355": "ICA Sneaking Suit"
-					},
-					"french": {
-						"562128030": "Avec des incrustations de Kevlar para-aramide, des matériaux caoutchoutés et une technologie de pointe spécialisée, cette combinaison furtive ICA de haute qualité vous gardera au sec, silencieux et sur la cible.",
-						"3166204355": "Combinaison furtive ICA"
-					},
-					"italian": {
-						"562128030": "Con inserti in Kevlar para-aramidico, materiali gommati e tecnologia specializzata all'avanguardia, questa tuta stealth di alta qualità ICA vi manterrà asciutti, silenziosi e sul bersaglio.",
-						"3166204355": "Tuta stealth di ICA"
-					},
-					"german": {
-						"562128030": "Mit Einlagen aus Para-Aramid-Kevlar, gummierten Materialien und spezieller Spitzentechnologie sorgt dieser hochwertige ICA-Tarnanzug dafür, dass Sie trocken und leise bleiben und Ihr Ziel nicht verfehlen.",
-						"3166204355": "ICA-Schleichanzug"
-					},
-					"spanish": {
-						"562128030": "Con incrustaciones de Kevlar para-aramida, materiales engomados y tecnología de vanguardia especializada, este traje sigiloso ICA de alta calidad le mantendrá seco, silencioso y en el blanco.",
-						"3166204355": "Traje sigiloso ICA"
-					},
-					"russian": {
-						"562128030": "Благодаря вставкам из пара-арамидного кевлара, прорезиненным материалам и специализированным передовым технологиям, этот высококлассный стелс-костюм ICA позволит вам оставаться сухим, тихим и нацеленным на цель.",
-						"3166204355": "Стелс-костюм ICA"
-					}
-				}
-			}
+			]
 		}
 	]
 }

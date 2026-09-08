@@ -1,0 +1,8 @@
+{
+	"id": "[unknown:/*/sneaking_suit_sub](bodypart).pc_weightedprim",
+	"type": "PRIM",
+	"references": [
+		"[unknown:/*/sneaking_suit_rig](bodypart).pc_bonerig",
+		{ "resource": "[unknown:/*/sneaking_suit_sub.mi].pc_mi", "type": "normal" }
+	]
+}

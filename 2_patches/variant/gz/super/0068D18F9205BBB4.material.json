@@ -1,0 +1,69 @@
+{
+	"id": "[unknown:/*/sneaking_suit_main.mi].pc_mi",
+	"name": "sneaking_suit_main.mi",
+	"type": "Standard",
+	"class": "[[assembly:/_pro/characters/materialclasses/basic_fabric.materialclass].fx](dx11).pc_mate",
+	"descriptor": "[assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_hero_flesh.template?/fx_md_char_hero_flesh.entitytemplate].pc_entityresource",
+	"classFlags": {
+		"lighting": true,
+		"primStandard": true,
+		"usesDefaultVS": true,
+		"usesSimpleShader": true
+	},
+	"instanceFlags": { "opaqueLit": true, "disableShaderLod": true },
+	"renderState": {
+		"enabled": true,
+		"blendEnabled": false,
+		"decalBlendDiffuse": 0,
+		"decalBlendNormal": 0,
+		"decalBlendSpecular": 0,
+		"decalBlendRoughness": 0,
+		"decalBlendEmission": 0,
+		"alphaTestEnabled": false,
+		"alphaReference": 255,
+		"fogEnabled": true,
+		"cullingMode": "DontCare",
+		"zBias": 0,
+		"zOffset": 0.0,
+		"subsurfaceRed": 0.0,
+		"subsurfaceGreen": 0.0,
+		"subsurfaceBlue": 0.0,
+		"subsurfaceValue": 0.0
+	},
+	"properties": {
+		"ConstantVector1D_04_Value": {
+			"enabled": true,
+			"value": 0.100000024
+		},
+		"ConstantVector1D_06_Value": { "enabled": true, "value": 1.1 },
+		"gm_mTransform2D_01": {
+			"enabled": true,
+			"value": [1.0, -0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0]
+		},
+		"ConstantVector1D_14_Value": { "enabled": true, "value": 0.0 },
+		"ConstantVector1D_15_Value": { "enabled": true, "value": 1.0 },
+		"ConstantVector1D_01_Value": { "enabled": true, "value": 0.5 },
+		"Diffuse_Saturation_01_Value": { "enabled": true, "value": 1.0 },
+		"Diffuse_Hue_Shift_01_Value": { "enabled": true, "value": 0.0 },
+		"ConstantVector1D_03_Value": { "enabled": true, "value": 1.0 },
+		"ConstantVector1D_13_Value": { "enabled": true, "value": 0.1 },
+		"ConstantVector1D_05_Value": { "enabled": true, "value": 0.0 },
+		"ConstantVector1D_16_Value": { "enabled": true, "value": 1.0 },
+		"mapTexture2DNormal_01": {
+			"enabled": true,
+			"value": "[assembly:/_pro/characters/assets/hero/agent47/textures/agent47_sneaking_suit_main.texture?/normal_a.tex](asnormalmap).pc_tex",
+			"type": "AsNormalMap"
+		},
+		"mapTexture2D_03": {
+			"enabled": true,
+			"value": "[assembly:/_pro/characters/assets/hero/agent47/textures/agent47_sneaking_suit_main.texture?/specular_a.tex](ascolormap).pc_tex",
+			"type": "AsColorMap"
+		},
+		"mapTexture2D_01": {
+			"enabled": true,
+			"value": "[assembly:/_pro/characters/assets/hero/agent47/textures/agent47_sneaking_suit_main.texture?/diffuse_a.tex](ascolormap).pc_tex",
+			"type": "AsColorMap"
+		},
+		"Diffuse_Color_01_Value": { "enabled": true, "value": "#ffffff" }
+	}
+}
