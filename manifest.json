@@ -69,7 +69,7 @@
 					}
 				},
 				{
-					"id": "install-phantom",
+					"id": "install-freedomfighters",
 					"name": "Freedom Phantom Suit",
 					"data": {
 						"contentFolders": ["2_patches/replace/freedomfighters"],
@@ -77,7 +77,7 @@
 					}
 				},
 				{
-					"id": "install-guerrilla",
+					"id": "install-guerrillawetsuit",
 					"name": "Guerrilla Wetsuit",
 					"data": {
 						"contentFolders": ["2_patches/replace/guerrillawetsuit"],
@@ -85,7 +85,7 @@
 					}
 				},
 				{
-					"id": "install-raven",
+					"id": "install-ravensuit",
 					"name": "Raven Suit",
 					"data": {
 						"contentFolders": ["2_patches/replace/ravensuit"],
@@ -93,7 +93,7 @@
 					}
 				},
 				{
-					"id": "install-tacgear",
+					"id": "install-tacticalgear",
 					"name": "Tactical Gear with Hunter's Hat",
 					"data": {
 						"contentFolders": ["2_patches/replace/tacticalgear"],
@@ -101,7 +101,7 @@
 					}
 				},
 				{
-					"id": "install-turtleneck",
+					"id": "install-tacticalturtleneck",
 					"name": "Tactical Turtleneck",
 					"data": {
 						"contentFolders": ["2_patches/replace/tacticalturtleneck"],
@@ -109,7 +109,7 @@
 					}
 				},
 				{
-					"id": "install-wetsuit",
+					"id": "install-tacticalwetsuit",
 					"name": "Tactical Wetsuit",
 					"data": {
 						"contentFolders": ["2_patches/replace/tacticalwetsuit"],
