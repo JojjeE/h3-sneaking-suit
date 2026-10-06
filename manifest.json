@@ -4,7 +4,7 @@
 	"description": "To show them age hasn't slowed you down one bit, use this cutting-edge stealth suit. Install it for Peacock or replace a tactical suit of your choice.",
 	"authors": ["Jojje"],
 	"version": "1.1.0",
-	"frameworkVersion": "3.0.0",
+	"frameworkVersion": "3.0.0-rc.4",
 	"url": "https://github.com/JojjeE/h3-sneaking-suit",
 	"conditions": { "supportedGames": ["h3"] },
 	"data": { "contentFolders": ["1_content/base"] },
